@@ -2,10 +2,12 @@
 /**
 * 
 */
-class UForumController extends AppController
+class Message_tagController extends AppController
 {
+	
 	public function index() {
 
 	}
 }
+
 ?>
