@@ -21,6 +21,7 @@ class MessageController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
+            $this->request->data['Message']['user_id'] = $this->Auth->user('id');
             $this->Message->create();
             if ($this->Message->save($this->request->data)) {
                 $this->Session->setFlash(__('Your message has been saved.'));

@@ -10,5 +10,9 @@ class Message extends AppModel
             'rule' => 'notEmpty'
         )
     );
+
+	public function isOwnedBy($message, $user) {
+    return $this->field('id', array('id' => $message, 'user_id' => $user)) !== false;
+	}
 }
 ?>
