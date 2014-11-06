@@ -1,3 +1,4 @@
+<?php
 // app/Controller/UsersController.php
 App::uses('AppController', 'Controller');
 
@@ -82,3 +83,5 @@ class UsersController extends AppController {
     }
 
 }
+
+?>

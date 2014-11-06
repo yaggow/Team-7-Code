@@ -1,7 +1,8 @@
-// app/Model/User.php
+<?php
+// app/Model/Users.php
 App::uses('AppModel', 'Model');
 
-class User extends AppModel {
+class Users extends AppModel {
     public $validate = array(
         'username' => array(
             'required' => array(
@@ -27,3 +28,4 @@ class User extends AppModel {
         return true;
     }
 }
+?>
